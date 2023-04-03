@@ -10,6 +10,12 @@ let NUMBERS_IMAGES: { [key: number]: Image; } = {
 # . . . #
 # . . . #
 . # # # .`),
+    7: images.createImage(`
+# # # # #
+. . . # .
+. . # . .
+. # . . .
+# . . . .`),
     8: images.createImage(`
 . # # # .
 # . . . #
@@ -20,5 +26,10 @@ let NUMBERS_IMAGES: { [key: number]: Image; } = {
 
 let ICON_IMAGES: { [key: number]: Image; } = {
     0: images.arrowImage(ArrowNames.North),
-    1: images.createImage
+    1: images.createImage(`
+# . . . #
+. # . # .
+. . # . .
+. # . # .
+# . . . #`),
 }
