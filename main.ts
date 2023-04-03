@@ -1,14 +1,41 @@
-let places_left: number = 5;
-let arrow_go: Image = images.arrowImage(ArrowNames.North);
+/* A: Enter
+ * B: Exit
+ */
 
-function run_forever () {
-    if (input.buttonIsPressed(Button.A)) {
-        arrow_go.showImage(0);
-        places_left -= 1;
-        basic.pause(2000);
-    } else {
-        basic.clearScreen()
+
+class PortalApp {
+    places_left: number;
+
+    constructor() {
+        this.places_left = 8;
+    }
+
+    main_loop() {
+        NUMBERS_IMAGES[this.places_left].showImage(0);
+
+        if (input.buttonIsPressed(Button.A)) {
+            self.enter();
+        }
+    }
+
+    init() {
+        basic.clearScreen();
+    }
+
+    enter() {
+        if (this.places_left > 0) {
+
+        } else {
+            ICON_IMAGES[]
+        }
     }
 }
 
-basic.forever(run_forever);
+function main(): void {
+    let application: PortalApp = new PortalApp();
+
+    application.init();
+    basic.forever((): void => application.main_loop());
+}
+
+main();
