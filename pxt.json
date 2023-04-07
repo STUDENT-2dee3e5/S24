@@ -4,14 +4,18 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "servo": "*",
+        "MakerBit-Ultrasonic": "github:1010technologies/pxt-makerbit-ultrasonic#v1.0.8"
     },
     "files": [
-        "main.blocks",
         "main.ts",
         "README.md",
-        "main.py",
-        "constants.ts"
+        "constants.ts",
+        "gate.ts",
+        "lamp.ts",
+        "controller.ts",
+        "ultrasonic.ts"
     ],
     "testFiles": [
         "test.ts"
