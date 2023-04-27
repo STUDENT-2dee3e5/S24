@@ -11,15 +11,11 @@
     "files": [
         "main.ts",
         "README.md",
-        "constants.ts",
         "gate.ts",
-        "lamp.ts",
-        "controller.ts",
-        "ultrasonic.ts"
+        "display.ts",
+        "lamp.ts"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "targetVersions": {
         "branch": "v5.0.12",
         "tag": "v5.0.12",
