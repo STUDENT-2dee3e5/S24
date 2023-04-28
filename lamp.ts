@@ -9,7 +9,7 @@ class LampController extends Controller {
         this.turn_off();
     }
 
-    main_loop(): void {
+    tick(): void {
         if (this.get_luminosity() > DAY_THRESHOLD) {
             this.turn_off();
         } else {

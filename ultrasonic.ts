@@ -9,8 +9,6 @@ class UltrasonicSensor {
     constructor(pin: PwmPin = PIN_ULTRASONIC) {
         this.pin = pin;
         this.handle = (state: boolean): void => null;
-        this.last_state = false;
-        this.last_delay = 
     }
 
     main_loop(): void {

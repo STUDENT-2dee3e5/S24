@@ -10,7 +10,7 @@ class App {
     init(): void {}
 
     main_loop(): void {
-        this.lamp.main_loop();
+        this.lamp.tick();
     }
 }
 
