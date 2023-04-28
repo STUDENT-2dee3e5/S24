@@ -15,7 +15,8 @@
         "gate.ts",
         "lamp.ts",
         "controller.ts",
-        "ultrasonic.ts"
+        "ultrasonic.ts",
+        "display.ts"
     ],
     "testFiles": [
         "test.ts"
