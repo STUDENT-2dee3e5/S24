@@ -9,6 +9,7 @@ class App {
 
     places_left: number;
     reset_at: number;
+    warning: boolean;
 
     constructor() {
         this.gate = new GateController(PIN_SERVO);
@@ -21,6 +22,7 @@ class App {
 
         this.places_left = 8;
         this.reset_at = Infinity;
+        this.warning = false;
     }
 
     init(): void {
@@ -29,6 +31,12 @@ class App {
     }
 
     main_loop(): void {
+        if (this.places_left > 8) {
+            /* WAT */
+            basic.showIcon(IconNames.No, 600);
+        } else {
+            this.warning = false;
+        }
         this.lamp.tick();
         this.ultrasonic.tick();
         if (this.mode == Mode.display) {
