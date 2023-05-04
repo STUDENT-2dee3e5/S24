@@ -1,31 +1,16 @@
-
-> Ouvrir cette page à [https://student-absc.github.io/s24/](https://student-absc.github.io/s24/)
-
-## Utiliser comme extension
-
-Ce dépôt peut être ajouté en tant qu'**extension** dans MakeCode.
-
-* ouvrir [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* cliquez sur **Nouveau projet**
-* cliquez sur **Extensions** dans le menu engrenage
-* recherchez **https://github.com/student-absc/s24** et importez
-
-## Éditer ce projet ![Badge du statut de la compilation](https://github.com/student-absc/s24/workflows/MakeCode/badge.svg)
-
-Éditer ce dépôt dans MakeCode.
-
-* ouvrir [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* cliquez sur **Importer** puis cliquez sur **Importer l'URL **
-* collez **https://github.com/student-absc/s24** et cliquez sur importer
-
-## Aperçu des blocs
-
-Cette section montre le code des blocs du dernier commit dans la branche master.
-Cette image peut prendre quelques minutes pour être actualisée.
-
-![Un rendu de la vue des blocs](https://github.com/student-absc/s24/raw/master/.github/makecode/blocks.png)
-
-#### Métadonnées (utilisées pour la recherche, le rendu)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+# Séquence 24
+## Séance 3 - Programmation
+### Présentation
+Projet [Makecode](https://makecode.microbit.org/) de programmation d'une carte **micro:bit** pour gérer le nouvel abri à vélo.
+### Programmation
+#### Language
+Utilisation de **TypeScript** uniquement.
+#### Structure
+- `main.ts`: Fichier principal, contient les *handles*
+- `controller.ts`: Une classe *mère*
+- `constants.ts`: Diverses constantes et énumérations
+- `lamp.ts`: Le *`Controller`* de la lampe
+- `gate.ts`: Le *`Controller`* du portail
+- `display.ts`: Le *`Controller`* de l'affichage
+- `ultrasonic.ts`: Le *`Controller`* du capteur ultrasonique
+- `button.ts`: Le *`Controller`* du boutton d'entrée
