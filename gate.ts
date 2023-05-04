@@ -1,11 +1,11 @@
-let PIN_SERVO: PwmPin = pins.P0;
+let PIN_SERVO: PwmOnlyPin = pins.P0;
 
 
 class GateController extends Controller {
     servo: servos.PinServo;
 
-    constructor(pin: PwmPin = PIN_SERVO) {
-        super(pin);
+    constructor(pin: PwmOnlyPin = PIN_SERVO) {
+        super(pin as PwmPin);
 
         this.servo = new servos.PinServo(this.pin);
 

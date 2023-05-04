@@ -4,62 +4,15 @@ enum Icons {
     STOP = 2,
 }
 
-let NUMBERS_IMAGES: { [key: number]: Image; } = {
-    0: images.createImage(`
-. # # . .
-# . . # .
-# . . # .
-# . . # .
-. # # . .`),
-    1: images.createImage(`
-. # # . .
-. . # . .
-. . # . .
-. . # . .
-. . # . .`),
-    2: images.createImage(`
-. # # . .
-# . . # .
-. . # . .
-. # . . .
-# # # # .`),
-    3: images.createImage(`
-# # # # .
-. . . # .
-. # # # .
-. . . # .
-# # # # .`),
-    4: images.createImage(`
-# . . # .
-# . . # .
-# # # # .
-. . . # .
-. . . # .`),
-    5: images.createImage(`
-. # # # .
-# . . . .
-# # # # .
-. . . # .
-# # # # .`),
-    6: images.createImage(`
-# # # # .
-# . . . .
-# # # # .
-# . . # .
-# # # # .`),
-    7: images.createImage(`
-# # # # .
-. . . # .
-. . # . .
-. # . . .
-# . . . .`),
-    8: images.createImage(`
-# # # # .
-# . . # .
-. # # . .
-# . . # .
-# # # # .`),
+enum Mode {
+    enter = 1,
+    leave = -1,
+    no_places_left = 0,
+    display = 2,
 }
+
+let DAY_THRESHOLD: number = 128;
+let DELAY: number = 3 * 1000;
 
 let ICON_IMAGES: { [key: number]: Image; } = {
     0: images.arrowImage(ArrowNames.North),

@@ -1,5 +1,4 @@
 let PIN_LAMP: PwmPin = pins.P1;
-let DAY_THRESHOLD: number = 128;
 
 
 class LampController extends Controller {
