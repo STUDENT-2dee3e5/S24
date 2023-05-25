@@ -5,6 +5,7 @@ class UltrasonicController {
     pin: DigitalPin;
 
     constructor(pin: DigitalPin = PIN_ULTRASONIC) {
+        input.onButtonPressed(Button.B, (): void => this.handle());
         this.pin = pin;
     }
 

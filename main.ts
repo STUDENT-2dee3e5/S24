@@ -28,6 +28,8 @@ class App {
     init(): void {
         this.button.setHandle((): void => this.button_pressed());
         this.ultrasonic.setHandle((): void => this.ultrasonic_signal());
+        // ALLO
+        servos.P0.setAngle(90);
     }
 
     main_loop(): void {
