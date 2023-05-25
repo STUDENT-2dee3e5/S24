@@ -12,6 +12,7 @@ enum Mode {
 }
 
 let DAY_THRESHOLD: number = 128;
+let DISTANCE_THRESHOLD: number = 5; // cm
 let DELAY: number = 3 * 1000;
 
 let ICON_IMAGES: { [key: number]: Image; } = {

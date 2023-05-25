@@ -1,15 +1,18 @@
-let PIN_ULTRASONIC: Button = Button.B;
+let PIN_ULTRASONIC: DigitalPin = DigitalPin.P2;
 
 class UltrasonicController {
     handle: () => void;
+    pin: DigitalPin;
 
-    constructor(button: Button = PIN_ULTRASONIC) {
-        input.onButtonPressed(button, (): void => this.handle());
+    constructor(pin: DigitalPin = PIN_ULTRASONIC) {
+        this.pin = pin;
     }
 
     tick(): void {
         /* Fake tick for later */
-        return;
+        if (grove.measureInCentimeters(this.pin as DigitalPin) < DISTANCE_THRESHOLD) {
+            this.handle();
+        }
     }
 
     setHandle(handle: () => void) {
